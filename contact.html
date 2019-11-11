@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container lc-container">
+        <div class="row d-sm-flex">
+            <!--Flex item1: My Profile Name-->
+            <div class="flex-fill" id="lc-logo"> <!-- lc-logo is Local style for styling my name as logo-->
+                <h1>Paul Chheang</h1>
+            </div>
+
+            <!-- Flex item 2: Nav-->
+            <div class="flex-fill text-left">
+
+                <!-- copied from getbootstrap.com-->
+                <nav class="navbar navbar-expand-md navbar-light justify-content-start">  <!-- Justify Toogle button to the left-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!--Justify the nav links to the right-->
+                        <div class="navbar-nav" id="lc-nav">
+                            <a class="nav-item nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="nav-item nav-link active" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!--********************************************************************
+        *** MAIN CONTENT ***************************************************
+        ********************************************************************* -->
+    <div class="container lc-container" id="main"> 
+        <!-- Row 1: Headline Text-->
+        <div class="row">
+            <div class="col-sm-12">
+                <section id="lc-headline">
+                    <h2> Contact</h2>
+                </section>
+            </div>
+        </div>
+
+        <!-- Row 2: Profile picture and starting paragraph -->
+        <div class="container">
+            <div class="row p-1">
+                    Name
+            </div>
+            <div class="row p-1">
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="row p-1">
+                Email
+            </div>
+            <div class="row p-1">
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="row p-1">
+                Message
+            </div>
+            <div class="row p-1">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="row p-1">
+                <button type="button" class="btn btn-secondary">Submit</button>
+            </div>
+        </div>
+            
+    </div>
+    <!-- FOOTER SECTION-->
+    <footer class="d-sm-flex text-center">
+        <span class="flex-fill" id="lc-copyright"> Copyright &copy; </span>        
+    </footer>    
+
+    <!-- Links for toggle button of Navbar to be functional -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -60,6 +60,27 @@ footer {
     top: 25px; /*Push the text "Copyright" to the bottom of the footer */
     font-size: 12px;
 }
+/* Styles for Portfolio page */
+.img-card {
+    flex: 0 0 250px;
+    position: relative;
+    margin-right: 15px;
+}
+.img-card img {
+    width: 250px;
+    height: 150px; 
+}
+.img-title {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background-color: #4aaaa5;
+    top: -50px;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+}
+
 
 /* Extra Small Devices* */
 @media screen and (max-width: 576px) {
