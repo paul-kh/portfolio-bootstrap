@@ -11,25 +11,18 @@
 </head>
 <body>
 
-    <!-- HEADER -->
+    <!-- HEADER *********************************************************************************************************** -->
     <header class="container-fluid">
-        <div class="row">
-                <!-- Col-1:  left margin of the header -->
-                <div class="col-sm-12 col-md-2 col-lg-2">
-                        
-                </div>
-                <!-- Col 2: Containing 2 sub-columns: 1). Logo/name & 2). Navbar -->
-                <div class="col-sm-12 col-md-8 col-lg-8">
+        <div class="row"> <!-- Header row wrapper-->
+                <div class="col-sm-12 col-md-2 col-lg-2"> <!-- Col-1:  left margin of the header --></div>
+                <div class="col-sm-12 col-md-8 col-lg-8"> <!-- Col 2: Containing 2 sub-columns: 1). Logo/name & 2). Navbar -->
                     <div class="row d-flex">
-                        <!-- Sub-col 1: Logo/Name -->
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-fill" id="my-logo">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-fill" id="my-logo"> <!-- Sub-col 1: Logo/Name -->
                             <h1>Paul Chheang</h1>
                         </div>
-
-                        <!-- Sub-col 2: Navbar -->
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-7" style="padding:0;margin:0">
-                            <!-- copied from getbootstrap.com-->
-                            <nav class="navbar navbar-expand-md navbar-light" style="padding-right:0;">  <!-- Justify Toogle button to the left-->
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-7" style="padding:0;margin:0"> <!-- Sub-col 2: Navbar -->
+                            <!-- Navbar component from getbootstrap.com-->
+                            <nav class="navbar navbar-expand-md navbar-light" style="padding-right:0;">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
@@ -45,74 +38,45 @@
 
                     </div>
                 </div>
-                <!-- righgt margin of the header -->
-                <div class="col-sm-12 col-md-2 col-lg-2"></div>     
-
-        </div> <!-- End of row header-->
-            
+                <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- righgt margin of the header -->
+        </div> <!-- End of header row wrapper-->      
     </header>
-    
-    <!-- Margin between header and main -->
-    <div class="row" style="margin: 15px"> </div>
+    <div class="row" style="margin: 15px"> </div> <!-- Devider between header and main -->
 
     <!-- MAIN *************************************************************************************************************** -->
     <div class="container-fluid">
-        <div class="row">
-
-            <!-- left margin of the main content -->
-            <div class="col-sm-12 col-md-2 col-lg-2"></div>
-                    
-            <!-- Col-2: Content section that contains 3 sub-rows: 1). Headline text, 2). Profile picture & begining paragraph, and 3). Remaining paragrapha -->
-            <div class="col-sm-12 col-md-8 col-lg-8 text-justify" id="my-main">
-                <!-- Sub-row-1: Headline Text -->
-                <div class="row p-3" id="my-headline">
+        <div class="row"> <!--Row wrapper for main content-->
+            <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- left margin of the main content -->
+            <div class="col-sm-12 col-md-8 col-lg-8 text-justify" id="my-main"> <!-- Col-2: containing 3 sub rows 1). Headline text, 2). Profile picture & begining paragraph, and 3). Remaining paragrapha -->
+                <div class="row p-3" id="my-headline"> <!-- Sub-row-1: Headline Text -->
                     <h2>About Me</h2>
-
                 </div>
-                <!-- Sub-row-2: Profile picture & beginning paragraph -->
-                <div class="row pt-4 d-flex">
-
+                <div class="row pt-4 d-flex">  <!-- Sub-row-2: Profile picture & beginning paragraph -->
                     <div class="col-12 col-sm-12 col-md-4 col-lg-3 text-center">
                         <img id="my-profile-pic" src="assets/images/profile-pic.png" alt="Paul Chheang's profile picture">    
                     </div>
                     <div class="col-12 col-sm-12 col-md-8 col-lg-9">
                         <p>
                             I am so excited to be on the path to becoming a full-stack developer. I didn't like coding when I was in college 19 years ago. People told me that coding is boring, headache, and we have to disconnect ourselves from other people! After I have worked in different roles in IT and telecommunication industry for many years, I found that there are so many business problems that are getting resolved with work-around solutions. It would be awesome if I can write codes to develop the solutions to those problems.
-
                         </p>
                     </div>
                 </div>
-                <!-- Sub-row-3: Remaining paragraph -->
-                <div class="row pl-3 pr-3 pt-0">
+                <div class="row pl-3 pr-3 pt-0"> <!-- Sub-row-3: Remaining paragraph -->
                         <p>
                             I have learned that coding is fun! It helped me connect to other developers in the community to learn from each other. Coding can make my ideas become real. I can help people solve their business problem. And I love helping people. I am not good at talking but I love to be around with people listening to them talking.
-                            
                         </p>
                         <p>
                             I am also excited to be a role model for my kids about learning code. I hope that my kids will love coding, and they can develop some applications for their studies or some games for their entertainment.
-                        
                         </p>
                 </div>
             </div>
-        
-            <!-- Right margin of the main content -->
-            <div class="col-sm-12 col-md-2 col-lg-2">
-                    
-            </div>
-
+            <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- Right margin of the main content -->
         </div>
-
     </div> 
 
-    <!-- Margin between main and footer-->
-    <div class="row" style="margin: 1000px"> </div>
-
     <!-- FOOTER ************************************************************************************************************ -->
-
     <footer class="container-fluid text-center" id="my-copyright">
-
          Copyright
-    
     </footer>
 
     <!-- ***************Links for toggle button of Navbar to be functional **********************************-->

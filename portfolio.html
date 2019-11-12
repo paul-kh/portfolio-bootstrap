@@ -11,25 +11,18 @@
 </head>
 <body>
 
-    <!-- HEADER -->
+    <!-- HEADER ************************************************************************************************************************-->
     <header class="container-fluid">
             <div class="row">
-                    <!-- Col-1:  left margin of the header -->
-                    <div class="col-sm-12 col-md-2 col-lg-2">
-                            
-                    </div>
-                    <!-- Col 2: Containing 2 sub-columns: 1). Logo/name & 2). Navbar -->
-                    <div class="col-sm-12 col-md-8 col-lg-8">
-                        <div class="row d-flex">
-                            <!-- Sub-col 1: Logo/Name -->
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-fill" id="my-logo">
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div><!-- Col-1:  left margin of the header -->
+                    <div class="col-sm-12 col-md-8 col-lg-8"> <!-- Col 2: Containing 2 sub-columns (logo/name and navbar) -->
+                        <div class="row d-flex"> <!-- Row wrapper for the 2 sub-columns. It dislplay as "flex" so that its child can use flex-fill to take up all the available space -->
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-fill" id="my-logo"> <!-- Sub-col 1: Logo/Name -->
                                 <h1>Paul Chheang</h1>
                             </div>
-    
-                            <!-- Sub-col 2: Navbar -->
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-7" style="padding:0;margin:0">
-                                <!-- copied from getbootstrap.com-->
-                                <nav class="navbar navbar-expand-md navbar-light" style="padding-right:0;">  <!-- Justify Toogle button to the left-->
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-7" style="padding:0;margin:0"> <!-- Sub-col 2: Navbar -->
+                                <!-- Navbar component from getbootstrap.com-->
+                                <nav class="navbar navbar-expand-md navbar-light" style="padding-right:0;">
                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="navbar-toggler-icon"></span>
                                     </button>
@@ -45,86 +38,62 @@
     
                         </div>
                     </div>
-                <!-- righgt margin of the header -->
-                <div class="col-sm-12 col-md-2 col-lg-2"></div>     
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- righgt margin of the header -->    
+            </div> <!-- End of row header-->       
+    </header> 
+       
+    <div class="row" style="margin: 15px"> </div> <!-- Devider between header and main -->
     
-        </div> <!-- End of row header-->
-                
-    </header>
-        
-        <!-- Margin between header and main -->
-        <div class="row" style="margin: 15px"> </div>
-    
-        <!-- MAIN *************************************************************************************************************** -->
-        <div class="container-fluid"> <!-- Container for main content-->
-            <div class="row"> <!-- Row for main content-->
-    
-                <!-- left margin of the main content -->
-                <div class="col-sm-12 col-md-2 col-lg-2"></div>
-                        
-                <!-- Col-2: Content section that contains 3 sub-rows: 1). Headline text, 2). Profile picture & begining paragraph, and 3). Remaining paragrapha -->
-                <div class="col-sm-12 col-md-8 col-lg-8" id="my-main">
-                    <!-- Sub-row-1: Headline Text -->
-                    <div class="row p-3" id="my-headline">
-                        <h2>Portfolio</h2>
-    
+    <!-- MAIN *************************************************************************************************************** -->
+    <div class="container-fluid"> <!-- Container for main content-->
+        <div class="row"> <!-- Row wrapper for main content-->
+            <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- left margin of the main content -->
+            <div class="col-sm-12 col-md-8 col-lg-8" id="my-main"> <!-- Col-2: contains 3 sub-rows: 1). Headline text, 2). Profile picture & begining paragraph, and 3). Remaining paragrapha -->
+                <div class="row p-3" id="my-headline">  <!-- Sub-row-1: headline Text -->
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="row pt-4"> <!-- Sub-row-2: image gallery -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 "> <!-- Image 1-->
+                        <div class="card my-card">
+                            <img src="assets/images/portfolio-1.png" class="card-img-top" alt="Developer Tools">
+                            <h5 class="my-card-title">Developer Tools</h5>
+                        </div>
                     </div>
-                    <!-- Row for image gallery -->
-                    <div class="row pt-4">
-
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 "> <!-- Image 2-->
                             <div class="card my-card">
-                                <img src="assets/images/portfolio-1.png" class="card-img-top" alt="Developer Tools">
-                                <h5 class="my-card-title">Developer Tools</h5>
+                                <img src="assets/images/portfolio-2.png" class="card-img-top" alt="Stock Market">
+                                <h5 class="my-card-title">Stock Market</h5>
                             </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
-                                <div class="card my-card">
-                                    <img src="assets/images/portfolio-2.png" class="card-img-top" alt="Stock Market">
-                                    <h5 class="my-card-title">Stock Market</h5>
-    
-                                </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
-                                <div class="card my-card">
-                                    <img src="assets/images/portfolio-3.png" class="card-img-top" alt="Smart School">
-                                    <h5 class="my-card-title">Smart School</h5>
-    
-                                </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
-                                <div class="card my-card">
-                                    <img src="assets/images/portfolio-4.png" class="card-img-top" alt="E-Store">
-                                    <h5 class="my-card-title"> E-Store</h5>
-    
-                                </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                                <div class="card my-card">
-                                    <img src="assets/images/portfolio-5.png" class="card-img-top" alt="ERP">
-                                    <h5 class="my-card-title">ERP</h5>
-    
-                                </div>
-                        </div>
-                    </div> <!--End of row for image gallery-->
-                <!-- Right margin of the main content -->
-                <div class="col-sm-12 col-md-2 col-lg-2"></div>
-    
-            </div> <!--End of row for main container-->
-    
-        </div> <!--End of Main Content Container-->
-    
-        <!-- Margin between main and footer-->
-        <div class="row" style="margin: 1000px"> </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 "> <!-- Image 3-->
+                            <div class="card my-card">
+                                <img src="assets/images/portfolio-3.png" class="card-img-top" alt="Smart School">
+                                <h5 class="my-card-title">Smart School</h5>
+                            </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 "> <!-- Image 4-->
+                            <div class="card my-card">
+                                <img src="assets/images/portfolio-4.png" class="card-img-top" alt="E-Store">
+                                <h5 class="my-card-title"> E-Store</h5>
+                            </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4"> <!-- Image 5-->
+                            <div class="card my-card">
+                                <img src="assets/images/portfolio-5.png" class="card-img-top" alt="ERP">
+                                <h5 class="my-card-title">ERP</h5>
+                            </div>
+                    </div>
+                </div> <!--End of sub-row for image gallery-->
+            </div> <!-- End of col-2 for main content -->
+            <div class="col-sm-12 col-md-2 col-lg-2"></div><!-- Right margin of the main content -->
+        </div> <!--End of row wrapper for main container-->
+    </div> <!--End of main container fluid-->
     
     <!-- FOOTER ************************************************************************************************************ -->
     <footer class="container-fluid text-center" id="my-copyright">
-
             Copyright
-    
     </footer>
  
-
     <!-- Links for toggle button of Navbar to be functional -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
