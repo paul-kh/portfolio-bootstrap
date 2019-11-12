@@ -45,12 +45,10 @@ footer {
     bottom: 0; /* Place it all the way at the bottom of the page */
     border-top: 4px #4aaaa5 solid;
     margin-top: 50px;
-
+    padding-top:25px;
 }
 #my-copyright { 
     color: white;
-    position: fixed; /* To be able to set the position fo the text "Copyright" */
-    bottom: 0; /*Push the text "Copyright" to the bottom of the footer */
     font-size: 12px;
 }
 /* Styles for Portfolio page */
