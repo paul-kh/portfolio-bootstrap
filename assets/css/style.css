@@ -4,42 +4,38 @@
 }
 body {
     background-image: url("../images/page-background.png");
+    box-sizing: none;
+    font-family: 'Roboto', sans-serif;
+}
+}
 }
 header {
     background-color:#ffffff; 
 }
-
-
-#lc-logo {
+#my-logo {
     background-color: #4aaaa5;
-    text-align: center;
     color: white;
     padding: 15px;
 }
-#lc-logo h1 {
+#my-logo h1 {
     font-size: 35px;
 }
-
-#lc-nav {
-    padding-top: 15px;
+.my-nav a:hover {
+    color: red;
 
 }
-#main {
+#my-main {
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    text-align: justify;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    padding-bottom: 20px;
-    
+    padding-top: 15px;
+   
 }
-#lc-headline{
-    padding: 20px 0;
+#my-headline{
+
     color: #4aaaa5;
     border-bottom: #D9D9D9 1px solid;
-    margin-bottom: 30px;
 }
-#lc-profile-pic {
+#my-profile-pic {
     width: 150px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -54,64 +50,28 @@ footer {
     border-top: 4px #4aaaa5 solid;
 
 }
-#lc-copyright { 
+#my-copyright { 
     color: white;
-    position: relative; /* To be able to set the top position fo the text "Copyright" */
-    top: 25px; /*Push the text "Copyright" to the bottom of the footer */
+    position: fixed; /* To be able to set the top position fo the text "Copyright" */
+    bottom: 0; /*Push the text "Copyright" to the bottom of the footer */
     font-size: 12px;
 }
 /* Styles for Portfolio page */
-.img-card {
-    flex: 0 0 250px;
+
+.my-card {
     position: relative;
-    margin-right: 15px;
+    width: 100%;
+    margin-bottom: 20px;
 }
-.img-card img {
-    width: 250px;
-    height: 150px; 
-}
-.img-title {
-    position: relative;
-    width: 250px;
-    height: 40px;
-    background-color: #4aaaa5;
-    top: -50px;
+
+.my-card-title {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: 50px;
     text-align: center;
+    padding: 10px;
     color: white;
-    padding-top: 5px;
+    background-color: #4aaaa5;
 }
-
-
-/* Extra Small Devices* */
-@media screen and (max-width: 576px) {
-    .lc-container {
-        max-width: 100%;
-    }
-}
-/* Extra Small Devices, .visible-xs-* */
-@media (max-width: 767px) {
-    .lc-container {
-    max-width: 100%;
-    }
-
-}
-/* Small Devices, .visible-sm-* */
-@media (min-width: 768px) and (max-width: 991px) {    
-    .lc-container {
-    max-width: 70%;
-    }
-}
-/* Medium Devices, .visible-md-* */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .lc-container {
-        max-width: 70%;
-        }
-
-}
-/* Large Devices, .visible-lg-* */
-@media (min-width: 1200px) {
-    .lc-container {
-        max-width: 70%;
-        }
-} 
 
