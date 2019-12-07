@@ -1,102 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto|Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto|Supermercado+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <!-- HEADER ************************************************************************************************************************-->
     <header class="container-fluid">
-            <div class="row">
-                    <div class="col-sm-12 col-md-2 col-lg-2"></div><!-- Col-1:  left margin of the header -->
-                    <div class="col-sm-12 col-md-8 col-lg-8"> <!-- Col 2: Containing 2 sub-columns (logo/name and navbar) -->
-                        <div class="row d-flex"> <!-- Row wrapper for the 2 sub-columns. It dislplay as "flex" so that its child can use flex-fill to take up all the available space -->
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-fill" id="my-logo"> <!-- Sub-col 1: Logo/Name -->
-                                <h1>Paul Chheang</h1>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-7" style="padding:0;margin:0"> <!-- Sub-col 2: Navbar -->
-                                <!-- Navbar component from getbootstrap.com-->
-                                <nav class="navbar navbar-expand-md navbar-light" style="padding-right:0;">
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!--Justify the nav links to the right-->
-                                        <div class="navbar-nav">
-                                            <a class="nav-item nav-link" href="index.html">About Me</a>
-                                            <a class="nav-item nav-link active" href="portfolio.html">Portfolio</a>
-                                            <a class="nav-item nav-link" href="contact.html">Contact</a>
-                                        </div>
-                                    </div>
-                                </nav>
-                            </div>
-    
-                        </div>
+        <div class="row mb-5">
+            <div class="col-sm-12 col-md-2 col-lg-2"></div><!-- Col-1:  left margin of the header -->
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <!-- Col 2: Containing 2 sub-columns (logo/name and navbar) -->
+                <div class="row d-flex">
+                    <!-- Row wrapper for the 2 sub-columns. It dislplay as "flex" so that its child can use flex-fill to take up all the available space -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-fill p-3" id="my-logo">
+                        <h1>Paul Chheang</h1>
                     </div>
-                    <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- righgt margin of the header -->    
-            </div> <!-- End of row header-->       
-    </header> 
-       
-    <div class="row" style="margin: 15px"> </div> <!-- Devider between header and main -->
-    
-    <!-- MAIN *************************************************************************************************************** -->
-    <div class="container-fluid"> <!-- Container for main content-->
-        <div class="row"> <!-- Row wrapper for main content-->
-            <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- left margin of the main content -->
-            <div class="col-sm-12 col-md-8 col-lg-8" id="my-main"> <!-- Col-2: contains 3 sub-rows: 1). Headline text, 2). Profile picture & begining paragraph, and 3). Remaining paragrapha -->
-                <div class="row p-3" id="my-headline">  <!-- Sub-row-1: headline Text -->
-                    <h2>Portfolio</h2>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-7" style="padding:0;margin:0">
+                        <!-- Sub-col 2: Navbar -->
+                        <!-- Navbar component from getbootstrap.com-->
+                        <nav class="navbar navbar-expand-md navbar-light" style="padding-right:0;">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                                <!--Justify the nav links to the right-->
+                                <div class="navbar-nav">
+                                    <a class="nav-item nav-link" href="index.html">About Me</a>
+                                    <a class="nav-item nav-link active" href="portfolio.html">Portfolio</a>
+                                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
                 </div>
-                <div class="row pt-4"> <!-- Sub-row-2: image gallery -->
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 "> <!-- Image 1-->
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- righgt margin of the header -->
+        </div> <!-- End of row header-->
+    </header>
+
+    <!-- MAIN *************************************************************************************************************** -->
+    <div class="container-fluid">
+        <!-- Container for main content-->
+        <div class="row mb-5">
+            <!-- Row wrapper for main content-->
+            <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- left margin of the main content -->
+            <div class="col-sm-12 col-md-8 col-lg-8" id="my-main">
+                <!-- Sub-row: 1). Headline text, 2). Profile picture & begining paragraph, and 3). Remaining paragrapha -->
+                <div class="row p-5" id="my-headline">
+                    <!-- Sub-row-1: Headline Text -->
+                    <div class="col">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+                <!-- Sub-row-2: image gallery -->
+                <div class="row p-5 mt-3">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                        <!-- Image 1-->
                         <div class="card my-card">
                             <img src="assets/images/portfolio-1.png" class="card-img-top" alt="Developer Tools">
                             <h5 class="my-card-title">Developer Tools</h5>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 "> <!-- Image 2-->
-                            <div class="card my-card">
-                                <img src="assets/images/portfolio-2.png" class="card-img-top" alt="Stock Market">
-                                <h5 class="my-card-title">Stock Market</h5>
-                            </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                        <!-- Image 2-->
+                        <div class="card my-card">
+                            <img src="assets/images/portfolio-2.png" class="card-img-top" alt="Stock Market">
+                            <h5 class="my-card-title">Stock Market</h5>
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 "> <!-- Image 3-->
-                            <div class="card my-card">
-                                <img src="assets/images/portfolio-3.png" class="card-img-top" alt="Smart School">
-                                <h5 class="my-card-title">Smart School</h5>
-                            </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                        <!-- Image 3-->
+                        <div class="card my-card">
+                            <img src="assets/images/portfolio-3.png" class="card-img-top" alt="Smart School">
+                            <h5 class="my-card-title">Smart School</h5>
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 "> <!-- Image 4-->
-                            <div class="card my-card">
-                                <img src="assets/images/portfolio-4.png" class="card-img-top" alt="E-Store">
-                                <h5 class="my-card-title"> E-Store</h5>
-                            </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                        <!-- Image 4-->
+                        <div class="card my-card">
+                            <img src="assets/images/portfolio-4.png" class="card-img-top" alt="E-Store">
+                            <h5 class="my-card-title"> E-Store</h5>
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4"> <!-- Image 5-->
-                            <div class="card my-card">
-                                <img src="assets/images/portfolio-5.png" class="card-img-top" alt="ERP">
-                                <h5 class="my-card-title">ERP</h5>
-                            </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <!-- Image 5-->
+                        <div class="card my-card">
+                            <img src="assets/images/portfolio-5.png" class="card-img-top" alt="ERP">
+                            <h5 class="my-card-title">ERP</h5>
+                        </div>
                     </div>
-                </div> <!--End of sub-row for image gallery-->
+                </div>
+                <!--End of sub-row for image gallery-->
             </div> <!-- End of col-2 for main content -->
             <div class="col-sm-12 col-md-2 col-lg-2"></div><!-- Right margin of the main content -->
-        </div> <!--End of row wrapper for main container-->
-    </div> <!--End of main container fluid-->
-    
+        </div>
+        <!--End of row wrapper for main container-->
+    </div>
+    <!--End of main container fluid-->
+
     <!-- FOOTER ************************************************************************************************************ -->
-    <footer class="container-fluid text-center" id="my-copyright">
-            Copyright
+    <footer class="container-fluid mt-5">
+        <div class="row text-center">
+            <div id="my-copyright" class="col"> Copyright </div>
+        </div>
     </footer>
- 
+
     <!-- Links for toggle button of Navbar to be functional -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

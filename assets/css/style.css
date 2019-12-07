@@ -6,6 +6,7 @@ body {
     background-image: url("../images/page-background.png");
     box-sizing: none;
     font-family: 'Roboto', sans-serif;
+    overflow: auto;
 }
 header {
     background-color:#ffffff; 
@@ -13,39 +14,27 @@ header {
 #my-logo {
     background-color: #4aaaa5;
     color: white;
-    padding: 15px;
 }
 #my-logo h1 {
     font-size: 35px;
 }
-.my-nav a:hover {
-    color: red;
-
-}
 #my-main {
     background-color: #ffffff;
-    border: 1px solid #dddddd;
-    padding-top: 15px;
-   
+    border: 1px solid #dddddd; 
 }
 #my-headline{
-
     color: #4aaaa5;
     border-bottom: #D9D9D9 1px solid;
 }
 #my-profile-pic {
-    width: 100% ;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    max-width: 100%;
 }
 footer {
     background-color: #666666;
     height: 50px;
-    position: fixed; /* Make footer sticky */
+    position: sticky; /* Make footer sticky */
     bottom: 0; /* Place it all the way at the bottom of the page */
     border-top: 4px #4aaaa5 solid;
-    margin-top: 50px;
-    padding-top:25px;
 }
 #my-copyright { 
     color: white;

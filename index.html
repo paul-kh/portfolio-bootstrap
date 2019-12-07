@@ -1,88 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto|Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto|Supermercado+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
 
+<body>
     <!-- HEADER *********************************************************************************************************** -->
     <header class="container-fluid">
-        <div class="row"> <!-- Header row wrapper-->
-                <div class="col-sm-12 col-md-2 col-lg-2"> <!-- Col-1:  left margin of the header --></div>
-                <div class="col-sm-12 col-md-8 col-lg-8"> <!-- Col 2: Containing 2 sub-columns: 1). Logo/name & 2). Navbar -->
-                    <div class="row d-flex">
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-fill" id="my-logo"> <!-- Sub-col 1: Logo/Name -->
-                            <h1>Paul Chheang</h1>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-7" style="padding:0;margin:0"> <!-- Sub-col 2: Navbar -->
-                            <!-- Navbar component from getbootstrap.com-->
-                            <nav class="navbar navbar-expand-md navbar-light" style="padding-right:0;">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!--Justify the nav links to the right-->
-                                    <div class="navbar-nav">
-                                        <a class="nav-item nav-link active" href="index.html">About Me <span class="sr-only">(current)</span></a>
-                                        <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                                        <a class="nav-item nav-link" href="contact.html">Contact</a>
-                                    </div>
+        <!-- Header row wrapper-->
+        <div class="row mb-5">
+            <!-- Col-1:  left margin of the header -->
+            <div class="col-sm-12 col-md-2 col-lg-2"></div>
+            <!-- Col 2: Containing 2 sub-columns: 1). Logo/name & 2). Navbar -->
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <div class="row d-flex">
+                    <!-- Sub-col 1: Logo/Name -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-fill p-3" id="my-logo">
+                        <h1>Paul Chheang</h1>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-7" style="padding:0;margin:0">
+                        <!-- Sub-col 2: Navbar -->
+                        <!-- Navbar component from getbootstrap.com-->
+                        <nav class="navbar navbar-expand-md navbar-light" style="padding-right:0;">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                                <!--Justify the nav links to the right-->
+                                <div class="navbar-nav">
+                                    <a class="nav-item nav-link active" href="index.html">About Me <span
+                                            class="sr-only">(current)</span></a>
+                                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                                    <a class="nav-item nav-link" href="contact.html">Contact</a>
                                 </div>
-                            </nav>
-                        </div>
-
+                            </div>
+                        </nav>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- righgt margin of the header -->
-        </div> <!-- End of header row wrapper-->      
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- righgt margin of the header -->
+        </div> <!-- End of header row wrapper-->
     </header>
-    <div class="row" style="margin: 15px"> </div> <!-- Devider between header and main -->
-
     <!-- MAIN *************************************************************************************************************** -->
     <div class="container-fluid">
-        <div class="row"> <!--Row wrapper for main content-->
+        <div class="row">
+            <!--Row wrapper for main content-->
             <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- left margin of the main content -->
-            <div class="col-sm-12 col-md-8 col-lg-8 text-justify" id="my-main"> <!-- Col-2: containing 3 sub rows 1). Headline text, 2). Profile picture & begining paragraph, and 3). Remaining paragrapha -->
-                <div class="row p-3" id="my-headline"> <!-- Sub-row-1: Headline Text -->
-                    <h2>About Me</h2>
-                </div>
-                <div class="row pt-4 d-flex">  <!-- Sub-row-2: Profile picture & beginning paragraph -->
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 text-center">
-                        <img id="my-profile-pic" src="assets/images/profile-pic.png" alt="Paul Chheang's profile picture">    
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-9">
-                        <p>
-                            I am so excited to be on the path to becoming a full-stack developer. I didn't like coding when I was in college 19 years ago. People told me that coding is boring, headache, and we have to disconnect ourselves from other people! After I have worked in different roles in IT and telecommunication industry for many years, I found that there are so many business problems that are getting resolved with work-around solutions. It would be awesome if I can write codes to develop the solutions to those problems.
-                        </p>
+            <div class="col-sm-12 col-md-8 col-lg-8 text-left" id="my-main">
+                <!-- Col-2: containing 3 sub rows 1). Headline text, 2). Profile picture & begining paragraph, and 3). Remaining paragrapha -->
+                <div class="row p-5" id="my-headline">
+                    <!-- Sub-row-1: Headline Text -->
+                    <div class="col">
+                        <h2>About Me</h2>
                     </div>
                 </div>
-                <div class="row pl-3 pr-3 pt-0"> <!-- Sub-row-3: Remaining paragraph -->
+
+                <div class="row pt-4 d-flex p-5">
+                    <!-- Sub-row-2: Profile picture & beginning paragraph -->
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 text-center py-3">
+                        <div class="card" style="border:none">
+                            <img id="my-profile-pic" src="assets/images/profile-pic.png" class="rounded-circle"
+                                alt="Paul Chheang's profile picture">
+                            <ul style="list-style: none; display: inline-block;">
+                                <li style="display: inline-block; padding: 10px;"><a class="card-text" href="https://github.com/paul-kh">Github &nbsp;<i class="fab fa-github fa-lg"></i></a></li>
+                                <li style="display: inline-block; padding: 10px;"><a class="card-text" href="https://www.linkedin.com/in/phalcheat-chheang-4152621a/">LinedIn &nbsp;<i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                                <li style="display: inline-block; padding: 10px;"><a class="card-text" href="#">Download Portfolio<i class="far fa-file-pdf fa-lg"></i></a></li>
+                           
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 p-3 pb-5">
                         <p>
-                            I have learned that coding is fun! It helped me connect to other developers in the community to learn from each other. Coding can make my ideas become real. I can help people solve their business problem. And I love helping people. I am not good at talking but I love to be around with people listening to them talking.
+                            Front-End Web Developer leveraging a background in product development and computer
+                            networking
+                            to build web app to solve business problems and simplify the complex to make sense and
+                            user-friendliness for everyone.
+                            Certified Microsoft Office Specialist Excel 2016 when taking a class of business-problem
+                            solving using Excel.
+                            Always dreamed about ability to code to become a broader-scope problem solver.
+                            <br>Recently attended coding BootCamp in Full Stack Web Development at the University of
+                            Minnesota, with newly earned skills
+                            in HTML5, CSS3, Bootstrap, JavaScript, jQuery, Github version control, and Agile development
+                            methodology.
+                            <br>Passionate about process improvement and better user experience.
+                            Cross-functional collaboration, enthusiasm, knowledge sharing enabled me to understand
+                            better about problems and process so that
+                            I can focus on finding solution afterward.
+                            Priority management and being calm under pressure always help me produce great outcomes.
                         </p>
-                        <p>
-                            I am also excited to be a role model for my kids about learning code. I hope that my kids will love coding, and they can develop some applications for their studies or some games for their entertainment.
-                        </p>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- Right margin of the main content -->
         </div>
-    </div> 
+    </div>
 
     <!-- FOOTER ************************************************************************************************************ -->
-    <footer class="container-fluid text-center" id="my-copyright">
-         Copyright
+    <footer class="container-fluid mt-5">
+        <div class="row text-center">
+            <div id="my-copyright" class="col"> Copyright </div>
+        </div>
     </footer>
 
     <!-- ***************Links for toggle button of Navbar to be functional **********************************-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
