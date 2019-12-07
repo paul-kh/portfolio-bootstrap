@@ -1,1 +1,1 @@
-Deployed site: https://paul-kh.github.io/portfolio-rework/
+Live site: https://paul-kh.github.io/portfolio/
