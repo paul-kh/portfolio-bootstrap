@@ -18,104 +18,235 @@
     <!-- HEADER *********************************************************************************************************** -->
     <header class="container-fluid">
         <!-- Header row wrapper-->
-        <div class="row mb-5">
-            <!-- Col-1:  left margin of the header -->
-            <div class="col-sm-12 col-md-2 col-lg-2"></div>
-            <!-- Col 2: Containing 2 sub-columns: 1). Logo/name & 2). Navbar -->
-            <div class="col-sm-12 col-md-8 col-lg-8">
-                <div class="row d-flex">
-                    <!-- Sub-col 1: Logo/Name -->
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-fill p-3" id="my-logo">
-                        <h1>Paul Chheang</h1>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-7" style="padding:0;margin:0">
-                        <!-- Sub-col 2: Navbar -->
-                        <!-- Navbar component from getbootstrap.com-->
-                        <nav class="navbar navbar-expand-md navbar-light" style="padding-right:0;">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                                <!--Justify the nav links to the right-->
-                                <div class="navbar-nav">
-                                    <a class="nav-item nav-link active" href="index.html">About Me <span
-                                            class="sr-only">(current)</span></a>
-                                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                                    <a class="nav-item nav-link" href="contact.html">Contact</a>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
+        <div class="row p-3">
+            <!-- Sub-col 1: Logo/Name -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-fill text-white text-left">
+                <h1>Paul Chheang</h1>
             </div>
-            <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- righgt margin of the header -->
+            <!-- Navbar -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-7">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active text-white" href="#about">About Me <span
+                                    class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link text-white" href="#portfolio">Portfolio</a>
+                            <a class="nav-item nav-link text-white" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
         </div> <!-- End of header row wrapper-->
     </header>
     <!-- MAIN *************************************************************************************************************** -->
-    <div class="container-fluid">
-        <div class="row">
-            <!--Row wrapper for main content-->
-            <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- left margin of the main content -->
-            <!-- Col-2: containing 3 sub rows 1). Headline text, 2). Profile picture & begining paragraph, and 3). Remaining paragrapha -->
-            <div class="col-sm-12 col-md-12 col-lg-8 text-left" id="my-main">
-                <div class="row p-5" id="my-headline">
-                    <!-- Sub-row-1: Headline Text -->
-                    <div class="col">
-                        <h2>About Me</h2>
-                    </div>
+    <div id="about" class="container-fluid bg-light">
+        <!-- ABOUT ME-->
+        <div class="row headline">
+            <!-- Sub-row-1: Headline Text -->
+            <div class="col text-center">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <!-- About Me Content -->
+        <div class="row d-flex  bottom-padding">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 text-center">
+                <div class="card profile-pic px-5" style="border:none">
+                    <img src="assets/images/profile-pic.png" class="rounded-circle"
+                        alt="Paul Chheang's profile picture">
+                    <ul style="list-style: none; display: inline-block;">
+                        <li><a class="card-text" target="_blank" href="https://github.com/paul-kh"><i
+                                    class="fab fa-github fa-2x"></i>&nbsp; GitHub </a></li>
+                        <li><a class="card-text" target="_blank"
+                                href="https://www.linkedin.com/in/phalcheat-chheang-4152621a/"><i
+                                    class="fab fa-linkedin-in fa-2x"></i>&nbsp;LinedIn</a></li>
+                        <li><a class="card-text" target="_blank" href="./assets/pdf/PaulChheang-resume.pdf" download><i
+                                    class="far fa-file-pdf fa-2x"></i>&nbsp;Download Portfolio</a></li>
+                        <li style="color:black; font-size: 12px;"><i class="far fa-envelope"></i>&nbsp;
+                            phalcheat@gmail.com </li>
+                        <li style="color:black; font-size: 12px;"><i class="fas fa-phone"></i>&nbsp;
+                            612-666-7819</li>
+                    </ul>
                 </div>
+            </div>
+            <!-- Paragraph -->
+            <div class="col-12 col-sm-12 col-md-8 col-lg-9 px-lg-5 about-me">
+                <p>
+                    Full-Stack Web Developer leveraging a background in product development and computer
+                    networking to build web app to solve business problems and simplify the complex to make
+                    sense and user-friendliness for everyone. I am a certified Microsoft Office Specialist in
+                    Excel. I dreamed about expanding my ability to code and to become a broader-scope problem
+                    solver.
+                    Recently, I earned a certificate in Full Stack Web Development at the University of
+                    Minnesota.
+                    I am passionate about process improvement and creating a better user experience. My
+                    strengths are
+                    cross-functional collaboration, enthusiasm, and knowledge sharing. This enables me to
+                    understand problems and processes better so that I can focus on finding areas of
+                    improvement. My technical skills, priority management and being calm under pressure always
+                    help me produce great outcomes making me advantageous to any team.
+                </p>
+                <h4 class="py-2">Technologies Used</h4>
+                <ul>
+                    <li> HTML5, CSS3, </li>
+                    <li> Bootstrap, JavaScript, jQuery</li>
+                    <li> Node.js, Express, React </li>
+                    <li> mySQL, MongoDB, Sequelize ORM</li>
+                    <li> Github </li>
+                    <li> Agile development methodology </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End of Container -->
 
-                <div class="row pt-4 d-flex p-5">
-                    <!-- Sub-row-2: Profile picture & beginning paragraph -->
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 text-center py-3">
-                        <div class="card profile-pic" style="border:none">
-                            <img src="assets/images/profile-pic.png" class="rounded-circle"
-                                alt="Paul Chheang's profile picture">
-                            <ul style="list-style: none; display: inline-block;">
-                                <li><a class="card-text" href="https://github.com/paul-kh"><i
-                                            class="fab fa-github fa-2x"></i>&nbsp; GitHub </a></li>
-                                <li><a class="card-text"
-                                        href="https://www.linkedin.com/in/phalcheat-chheang-4152621a/"><i
-                                            class="fab fa-linkedin-in fa-2x"></i>&nbsp;LinedIn</a></li>
-                                <li><a class="card-text" href="./assets/pdf/PaulChheang-resume.pdf" download><i
-                                            class="far fa-file-pdf fa-2x"></i>&nbsp;Download Portfolio</a></li>
-                                <li style="color:black; font-size: 12px;"><i class="far fa-envelope"></i>&nbsp;
-                                    phalcheat@gmail.com </li>
-                                <li style="color:black; font-size: 12px;"><i class="fas fa-phone"></i>&nbsp;
-                                    612-232-7210</li>
-                            </ul>
-                        </div>
+    <div id="portfolio" class="containter-fluid text-white bg-porfolio">
+        <!-- Portfolio -->
 
-
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 p-3 pb-5">
-                        <p>
-                            Full-Stack Web Developer leveraging a background in product development and computer
-                            networking to build web app to solve business problems and simplify the complex to make
-                            sense and user-friendliness for everyone. I am a certified Microsoft Office Specialist in
-                            Excel. I dreamed about expanding my ability to code and to become a broader-scope problem
-                            solver.
-                            Recently, I earned a certificate in Full Stack Web Development at the University of
-                            Minnesota where I gained skills in HTML5, CSS3, Bootstrap, JavaScript, jQuery, Node.js,
-                            Express, Github version control, and Agile development methodology.
-                            I am passionate about process improvement and creating a better user experience. My strengths are
-                            cross-functional collaboration, enthusiasm, and knowledge sharing. This enables me to
-                            understand problems and processes better so that I can focus on finding areas of
-                            improvement. My technical skills, priority management and being calm under pressure always
-                            help me produce great outcomes making me advantageous to any team.
+        <div class="row headline">
+            <!-- Sub-row-1: Headline Text -->
+            <div class="col text-center">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+        <!-- Sub-row-2: image gallery -->
+        <div class="row px-5  bottom-padding">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <!-- Image 1-->
+                <div class="card my-card p-1">
+                    <img src="assets/images/sales-management.png" class="card-img-top" alt="Sales Management System">
+                    <div class="card-body pt-0 text-center">
+                        <p class="card-text">
+                            <h5 class="text-dark text-center">Sales Management System</h5>
+                            <a target="_blank" href="https://ryan-busi.herokuapp.com/"> Live site</a> <br>
+                            <a target="_blank" href="https://github.com/RyanEllingson/Busi"> GitHub Repo</a>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-2 col-lg-2"></div> <!-- Right margin of the main content -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <!-- Image 1-->
+                <div class="card my-card p-1">
+                    <img src="assets/images/restaurant-locator.png" class="card-img-top" alt="Restaurant Locator">
+                    <div class="card-body pt-0 text-center">
+                        <p class="card-text">
+                            <h5 class="text-dark">Restaurant Locator</h5>
+                            <a target="_blank" href="https://paul-kh.github.io/restaurant-locator/"> Live site</a> <br>
+                            <a target="_blank" href="https://github.com/paul-kh/restaurant-locator"> GitHub Repo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                <!-- Image 1-->
+                <div class="card my-card p-1 text-center">
+                    <img src="assets/images/eat-da-burger.png" class="card-img-top"
+                        alt="Devour Burger with mySQL & Sequelize">
+                    <div class="card-body pt-0">
+                        <p class="card-text">
+                            <h5 class="text-dark">Eat Burger (mySQL & Sequelize)</h5>
+                            <a target="_blank" href="https://eat-da-burger-pc.herokuapp.com/"> Live site</a> <br>
+                            <a target="_blank" href="https://github.com/paul-kh/eat-da-burger"> GitHub Repo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                <!-- Image 1-->
+                <div class="card my-card p-1 text-center">
+                    <img src="assets/images/note-taker.png" class="card-img-top" alt="Note Taker with Express">
+                    <div class="card-body pt-0">
+                        <p class="card-text">
+                            <h5 class="text-dark">Note Taker with Express</h5>
+                            <a target="_blank" href="https://paul-note-taker.herokuapp.com/"> Live site</a> <br>
+                            <a target="_blank" href="https://github.com/paul-kh/note-taker"> GitHub Repo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                <!-- Image 1-->
+                <div class="card my-card p-1 text-center">
+                    <img src="assets/images/weather-dashboard.png" class="card-img-top" alt="Weather Dashboard">
+                    <div class="card-body pt-0">
+                        <p class="card-text">
+                            <h5 class="text-dark">Weather Dashboard</h5>
+                            <a target="_blank" href="https://paul-kh.github.io/weather-dashboard/"> Live site</a> <br>
+                            <a target="_blank" href="https://github.com/paul-kh/weather-dashboard/"> GitHub Repo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                <!-- Image 1-->
+                <div class="card my-card p-1 text-center">
+                    <img src="assets/images/time-based-quiz.png" class="card-img-top" alt="Time-Based Quiz">
+                    <div class="card-body pt-0">
+                        <p class="card-text">
+                            <h5 class="text-dark">Time-Based Quiz</h5>
+                            <a target="_blank" href="https://paul-kh.github.io/time-based-quiz/"> Live site</a> <br>
+                            <a target="_blank" href="https://github.com/paul-kh/time-based-quiz"> GitHub Repo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of sub-row for image gallery-->
+    </div>
+    <!-- End of Container -->
+
+
+    <!-- CONTACT -->
+    <div id="contact" class="container-fluid bg-dark text-white">
+        <div class="row headline">
+            <!-- Sub-row-1: Headline Text -->
+            <div class="col text-center">
+                <h2>Contact</h2>
+            </div>
+        </div>
+        <!-- Row wrapper for contact form -->
+        <div class="row  bottom-padding">
+            <div class="container">
+                <div class="row p-1">
+                    <div class="col">Name</div>
+                </div>
+                <div class="row p-1">
+                    <div class="col"><input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default"></div>
+                </div>
+                <div class="row p-1">
+                    <div class="col">Email</div>
+                </div>
+                <div class="row p-1">
+                    <div class="col"><input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default"></div>
+                </div>
+                <div class="row p-1">
+                    <div class="col">Message</div>
+                </div>
+                <div class="row p-1">
+                    <div class="col"><textarea class="form-control" id="exampleFormControlTextarea1"
+                            rows="3"></textarea></div>
+                </div>
+                <div class="row pl-1 mt-2">
+                    <div class="col"><button type="button" class="btn btn-primary">Submit</button></div>
+
+                </div>
+            </div>
         </div>
     </div>
 
+
     <!-- FOOTER ************************************************************************************************************ -->
-    <footer class="container-fluid mt-5">
+    <footer class="container-fluid">
         <div class="row text-center">
-            <div id="my-copyright" class="col"> Copyright </div>
+            <div id="my-copyright" class="col">
+                <span style="font-size: 14px"> Paul Chheang | &copy copyright</span>
+            </div>
         </div>
     </footer>
 
