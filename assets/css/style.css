@@ -29,7 +29,7 @@ header {
 }
 .about-me {
   line-height: 1.7rem;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .about-me ul {
   padding: 0 17px;
