@@ -1,0 +1,172 @@
+.tool {
+  margin: 0 auto;
+  border-radius: 3px;
+  overflow: hidden;
+  display: table;
+  background-color: $color-black;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+
+  &__detail {
+    width: 34rem;
+    display: table-cell;
+    // height: 70vh;
+    text-align: center;
+    padding-top: 6rem;
+    padding-left: 6rem;
+    position: relative;
+
+    @include respond(tab-port) {
+      width: 100%;
+      display: block;
+      padding: 2rem;
+    }
+
+    & h3 {
+      font-size: 3rem;
+      color: $color-white;
+      text-shadow: 0 4px 8px $color-primary-dark;
+      border-bottom: 0.2rem solid $color-white;
+      margin-bottom: 1.5rem;
+    }
+
+    & p,
+    h4 {
+      font-size: $default-font-size;
+    }
+    & p {
+      color: $color-white;
+    }
+
+    & h4 {
+      color: $color-primary-light;
+      text-shadow: 0 4px 8px $color-grey-light-1;
+      position: absolute;
+      top: 44rem;
+      right: 0.5rem;
+    }
+
+    &-box {
+      height: 48rem;
+      border: 0.5rem solid $color-grey-dark-2;
+      border-radius: 5px;
+      position: relative;
+      padding: 18.5rem 1rem;
+    }
+  }
+
+  &__logo-box {
+    width: 16rem;
+    height: 16rem;
+    border: 0.5rem solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 3px 3px 6px rgb(83, 190, 97), 3px -3px 6px rgb(193, 218, 196),
+      -3px -3px 6px rgb(119, 134, 66), -3px 3px 6px rgb(0, 110, 255);
+    // padding: 1rem;
+    // text-align: center;
+
+    & img {
+      width: 10rem;
+      transform: translateY(2.5rem);
+
+      &[alt="git"] {
+        transform: translate(0, 3rem) scale(2);
+      }
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  &__box {
+    width: 60rem;
+    height: 60rem;
+    display: table-cell;
+
+    padding: 3rem;
+    position: relative;
+
+    @include respond(tab-port) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__wrapper {
+    @include centerElement;
+    width: fit-content;
+
+    &-row {
+      @include clearfix;
+      transition: all 0.2s;
+
+      &:hover ~ div {
+        transform: translateY(3.8rem);
+      }
+    }
+  }
+
+  div[class^="tool-"] {
+    width: 12rem;
+    height: 12rem;
+    border: 0.5rem solid green;
+    border-radius: 50%;
+    // clip-path: polygon(
+    //   0 25%,
+    //   25% 0,
+    //   75% 0,
+    //   100% 25%,
+    //   100% 75%,
+    //   75% 100%,
+    //   25% 100%,
+    //   0 75%
+    // );
+    float: left;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 1px;
+    }
+
+    & img {
+      width: 8rem;
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+
+      &[alt="aws"] {
+        top: 2.8rem;
+      }
+
+      &[alt="git"] {
+        top: 2.3rem;
+        transform: scale(2);
+      }
+
+      &[alt="jest"] {
+        transform: scale(0.8);
+      }
+    }
+
+    &:hover {
+      transform: scale(1.5);
+      background-color: rgba($color-black, 1);
+      box-shadow: 3px 3px 6px rgb(83, 190, 97), 3px -3px 6px rgb(193, 218, 196),
+        -3px -3px 6px rgb(119, 134, 66), -3px 3px 6px rgb(0, 110, 255);
+    }
+
+    &:hover ~ div {
+      transform: translateX(3.8rem);
+    }
+  }
+}

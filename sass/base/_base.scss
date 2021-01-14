@@ -1,0 +1,39 @@
+// GLOBAL RESET
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* force the property 'box-sizing' to be inherited for all elements including the pseudo elements ('::after' & '::before') */
+}
+
+// Define the root font size so we can relatively use 'rem' unit
+// for property values of all elements to achieve the responsiveness
+// of our web site in case user would change browser font size
+html {
+  font-size: 62.5%; //define 1rem = 10px or 62.5% of the root font size 16px
+
+  // max-with: 1200px
+  @include respond(tab-land) {
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%;
+  }
+
+  // max-with: 900px
+  @include respond(tab-port) {
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  // min-with: 1800px
+  @include respond(big-desktop) {
+    font-size: 75%; //1 rem = 12, 12/16 = 75%
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}

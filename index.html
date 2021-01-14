@@ -1,253 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <title>Paul Chheang</title>
+    <link rel="stylesheet" href="./assets//css/icon-font.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Paul Chheang | Phalcheat Chheang</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto|Supermercado+One&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
 
-<body>
-    <!-- HEADER *********************************************************************************************************** -->
-    <header class="container-fluid">
-        <!-- Header row wrapper-->
-        <div class="row p-3">
-            <!-- Sub-col 1: Logo/Name -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-fill text-white text-left">
-                <h1>Paul Chheang</h1>
-            </div>
-            <!-- Navbar -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-7">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <div class="navbar-nav">
-                            <a class="nav-item nav-link active text-white" href="#about">About Me <span
-                                    class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link text-white" href="#portfolio">Portfolio</a>
-                            <!-- <a class="nav-item nav-link text-white" href="#contact">Contact</a> -->
-                        </div>
-                    </div>
-                </nav>
-            </div>
+      <div class="navigation__background" id="nav-bg">&nbsp;</div>
 
-        </div> <!-- End of header row wrapper-->
+      <nav class="navigation__nav" id="nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link"
+              ><span>01</span>About Me</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#what-i-can-do" class="navigation__link"
+              ><span>02</span>What I Can Do</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link"
+              ><span>03</span>My Projects</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#toolbox" class="navigation__link"
+              ><span>04</span>My Toolbox</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#contact" class="navigation__link"
+              ><span>05</span>Contact Me</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="header__logo-box">
+        <div class="logo logo--white">
+          <i class="logo__icon--white icon-basic-world"></i>
+          <p class="logo__name">Paul Chheang</p>
+          <p class="logo__coding-symbol">&lt;/&gt;</p>
+        </div>
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Full-Stack Web Developer</span>
+          <span class="heading-primary--sub"
+            >All Days I Dream About Coding</span
+          >
+        </h1>
+
+        <a href="#what-i-can-do" class="btn btn--white btn--animated"
+          >What I Can Do</a
+        >
+      </div>
     </header>
-    <!-- MAIN *************************************************************************************************************** -->
-    <div id="about" class="container-fluid bg-light">
-        <!-- ABOUT ME-->
-        <div class="row headline">
-            <!-- Sub-row-1: Headline Text -->
-            <div class="col text-center">
-                <h2>About Me</h2>
-            </div>
+
+    <main>
+      <section class="section-about" id="about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Beautiful life as a software developer
+          </h2>
         </div>
-        <!-- About Me Content -->
-        <div class="row d-flex  bottom-padding">
-            <div class="col-12 col-sm-12 col-md-4 col-lg-3 text-center">
-                <div class="card profile-pic px-5" style="border:none">
-                    <img src="assets/images/profile.jpg" class="rounded-circle" alt="Paul Chheang's profile picture">
-                    <ul style="list-style: none; display: inline-block;">
-                        <li><a class="card-text" target="_blank" href="https://github.com/paul-kh"><i
-                                    class="fab fa-github fa-2x"></i>&nbsp; GitHub </a></li>
-                        <li><a class="card-text" target="_blank"
-                                href="https://www.linkedin.com/in/phalcheat-chheang-4152621a/"><i
-                                    class="fab fa-linkedin-in fa-2x"></i>&nbsp;LinkedIn</a></li>
-                        <li><a class="card-text" target="_blank" href="./assets/pdf/PaulChheang_resume.pdf" download><i
-                                    class="far fa-file-pdf fa-2x"></i>&nbsp;Download Resume</a></li>
-                        <li style="color:black; font-size: 12px;"><i class="far fa-envelope"></i>&nbsp;
-                            phalcheat@gmail.com </li>
-                    </ul>
-                </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="./assets/images/coding-2.jpg"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+              />
+              <img
+                src="./assets/images/nat-2-large.jpg"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+              />
+              <img
+                src="./assets/images/profile.jpg"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+              />
             </div>
-            <!-- Paragraph -->
-            <div class="col-12 col-sm-12 col-md-8 col-lg-9 px-lg-5 about-me">
-                <p>
-                    Full-Stack Web Developer leveraging a background in product development and IT support to build web
-                    app to solve business problems and simplify the complex to make
-                    sense and user-friendliness for everyone. I dreamed about expanding my ability to code and to become
-                    a broader-scope problem
-                    solver.
-                    <p>
-                        Recently, I earned a certificate in Full Stack Web Development at the University of
-                        Minnesota.
-                    </p>
-                    
-                    <p>My strengths are
-                        cross-functional collaboration, enthusiasm, and knowledge sharing. This enables me to
-                        understand problems and processes better so that I can focus on finding areas of
-                        improvement. My technical skills, priority management and being calm under pressure always
-                        help me produce great outcomes making me advantageous to any team.</p>
-                    
-                </p>
-                <h4 class="py-2">Technologies Used</h4>
+          </div>
+
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              I fall in love with designing and coding
+            </h3>
+
+            <p class="paragraph">
+              My name is Phalcheat Chheang. I go by Paul. I am a full-stack web
+              developer leveraging a background in product development and IT
+              support to build web applications.
+              <br /><br />
+
+              I graduated with a bachelor's degree in Information Technology and
+              I earned a certificate in Full Stack Web Development at the
+              University of Minnesota.
+              <br /><br />
+              My strengths are cross-functional collaboration, perseverance, and
+              knowledge sharing.
+            </p>
+
+            <a href="#projects" class="btn-text">Explore My Projects &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-features" id="what-i-can-do">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary u-text-white">What I Can Do</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-gear"></i>
+              <i class="feature-box__icon icon-basic-server2"></i>
+
+              <h3 class="heading-tertiary u-margin-bottom-small">Backend</h3>
+              <div class="task__box">
                 <ul>
-                    <li> <strong> Front End:</strong> HTML5 | CSS3 | Bootstrap | JavaScript | jQuery | ReactJS </li>
-                    <li> <strong> Back End:</strong> Node.js | Express.js | MySQL | MongoDB | Firebase
-                    </li>
-                    <li> <strong> Development Methodologies & Tools:</strong> Agile | System Development Life Cycle
-                        (SDLC) | Version Control (Github) </li>
-                    <li> <strong> Test Driven Development:</strong> Jest </li>
+                  <li>Design & build server-side software</li>
+                  <li>Design & build REST & GraphQL APIs</li>
+                  <li>
+                    Design & implement data models in SQL and NoSQL Database
+                  </li>
                 </ul>
+              </div>
             </div>
+          </div>
+          <div class="col-1-of-2">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-webpage-img-txt"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Frontend</h3>
+              <div class="task__box">
+                <ul>
+                  <li>Design & build responsive web sites</li>
+                  <li>Test website for usability</li>
+                  <li>Ensure browser compatibility</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- End of Container -->
-
-    <div id="portfolio" class="containter-fluid text-white bg-porfolio">
-        <!-- Portfolio -->
-
-        <div class="row headline">
-            <!-- Sub-row-1: Headline Text -->
-            <div class="col text-center">
-                <h2>Portfolio</h2>
-            </div>
+        <div class="u-center-text">
+          <a href="#projects" class="btn btn--white">See My Projects</a>
         </div>
-        <!-- Sub-row-2: image gallery -->
-        <div class="row px-5  bottom-padding">
-                   
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <!-- Image 1-->
-                <div class="card my-card p-1">
-                    <img src="assets/images/online-shop.png" class="card-img-top" alt="Online Shop">
-                    <div class="card-body pt-0 text-center">
-                        <p class="card-text">
-                            <h5 class="text-dark text-center">Online Shop</h5>
-                            <a target="_blank" href="http://onlineshop-env.eba-uwgctxhz.us-west-2.elasticbeanstalk.com/"> Live site</a>
-                            <span class="text-secondary"> | </span>
-                            <a target="_blank" href="https://github.com/paul-kh/online-shop-node-express-mongoose"> GitHub Repo</a>
-                        </p>
-                        <p class="text-secondary"><strong>Technologies used:</strong> HTML | CSS | Node.js | Express.js | Ejs | MongoDB | Mongoose | AWS | Stripe
-                        </p>
-                    </div>
-                </div>
-            </div>
+      </section>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <!-- Image 1-->
-                <div class="card my-card p-1">
-                    <img src="assets/images/restaurant-locator.png" class="card-img-top" alt="Restaurant Locator">
-                    <div class="card-body pt-0 text-center">
-                        <p class="card-text">
-                            <h5 class="text-dark">Restaurant Locator</h5>
-                            <a target="_blank" href="https://paul-kh.github.io/restaurant-locator/"> Live site</a>
-                            <span class="text-secondary"> | </span>
-                            <a target="_blank" href="https://github.com/paul-kh/restaurant-locator"> GitHub Repo</a>
-                        </p>
-                        <p class="text-secondary"><strong>Technologies used:</strong> HTML5 | CSS3 | JavaScript |
-                            Bootstrap | REST APIs | JSON
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
-                <!-- Image 1-->
-                <div class="card my-card p-1 text-center">
-                    <img src="assets/images/eat-da-burger.png" class="card-img-top"
-                        alt="Devour Burger with MySQL & Sequelize">
-                    <div class="card-body pt-0">
-                        <p class="card-text">
-                            <h5 class="text-dark">Eat Burger (MySQL & Sequelize)</h5>
-                            <a target="_blank" href="https://eat-da-burger-pc.herokuapp.com/"> Live site</a>
-                            <span class="text-secondary"> | </span>
-                            <a target="_blank" href="https://github.com/paul-kh/eat-da-burger"> GitHub Repo</a>
-                        </p>
-                        <p class="text-secondary"><strong>Technologies used:</strong> HTML5 | CSS3 | JavaScript |
-                            Bootstrap | Node.js | MySQL
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
-                <!-- Image 1-->
-                <div class="card my-card p-1 text-center">
-                    <img src="assets/images/note-taker.png" class="card-img-top" alt="Note Taker with Express">
-                    <div class="card-body pt-0">
-                        <p class="card-text">
-                            <h5 class="text-dark">Note Taker with Express.js</h5>
-                            <a target="_blank" href="https://paul-note-taker.herokuapp.com/"> Live site</a>
-                            <span class="text-secondary"> | </span>
-                            <a target="_blank" href="https://github.com/paul-kh/note-taker"> GitHub Repo</a>
-                        </p>
-                        <p class="text-secondary"><strong>Technologies used:</strong> HTML5 | CSS3 | JavaScript | jQuery
-                            | Bootstrap | Node.js | REST API | JSON
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
-                <!-- Image 1-->
-                <div class="card my-card p-1 text-center">
-                    <img src="assets/images/weather-dashboard.png" class="card-img-top" alt="Weather Dashboard">
-                    <div class="card-body pt-0">
-                        <p class="card-text">
-                            <h5 class="text-dark">Weather Dashboard</h5>
-                            <a target="_blank" href="https://paul-kh.github.io/weather-dashboard/"> Live site</a>
-                            <span class="text-secondary"> | </span>
-                            <a target="_blank" href="https://github.com/paul-kh/weather-dashboard/"> GitHub Repo</a>
-                        </p>
-                        <p class="text-secondary"><strong>Technologies used:</strong> HTML5 | CSS3 | JavaScript |
-                            Bootstrap | REST APIs | JSON
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
-                <!-- Image 1-->
-                <div class="card my-card p-1 text-center">
-                    <img src="assets/images/time-based-quiz.png" class="card-img-top" alt="Time-Based Quiz">
-                    <div class="card-body pt-0">
-                        <p class="card-text">
-                            <h5 class="text-dark">Time-Based Quiz</h5>
-                            <a target="_blank" href="https://paul-kh.github.io/time-based-quiz/"> Live site</a>
-                            <span class="text-secondary"> | </span>
-                            <a target="_blank" href="https://github.com/paul-kh/time-based-quiz"> GitHub Repo</a>
-                        </p>
-                        <p class="text-secondary"><strong>Technologies used:</strong> HTML5 | CSS3 | JavaScript |
-                            Bootstrap
-                        </p>
-                    </div>
-                </div>
-            </div>
-
+      <section class="section-projects" id="projects">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">My Projects</h2>
         </div>
-        <!--End of sub-row for image gallery-->
-    </div>
-    <!-- End of Container -->
 
-    <!-- FOOTER ************************************************************************************************************ -->
-    <footer class="container-fluid">
-        <div class="row text-center">
-            <div id="my-copyright" class="col">
-                <span style="font-size: 14px"> Paul Chheang | &copy copyright</span>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">
+                  <div class="card__picture card__picture--2">
+                    &nbsp;
+                    <img
+                      src="./assets/images/online-store.png"
+                      alt="online store"
+                    />
+                  </div>
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1">
+                    Online <br />Store
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <div class="card__description">
+                    <p class="paragraph u-center-text">
+                      An online store app that allows user to sign-up, sign-in,
+                      manage products for online sales.
+                    </p>
+                  </div>
+
+                  <h3
+                    class="heading-tertiary u-center-text u-margin-bottom-small"
+                  >
+                    Technologies used:
+                  </h3>
+                  <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>Node.js & Express.js</li>
+                    <li>Ejs (View Engine)</li>
+                    <li>MongoDB & Mongoose</li>
+                    <li>AWS S3 & Elastic Beanstalk</li>
+                    <li>Stripe payment</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <a
+                    href="http://onlineshop-env.eba-uwgctxhz.us-west-2.elasticbeanstalk.com/"
+                    class="btn btn--white u-margin-bottom-medium u-width-medium"
+                    target="_new"
+                  >
+                    Live Site
+                  </a>
+                  <a
+                    href="https://github.com/paul-kh/online-shop-node-express-mongoose"
+                    class="btn btn--white u-width-medium"
+                    target="_new"
+                  >
+                    Github Repo
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">
+                  &nbsp;
+                  <img
+                    src="./assets/images/restaurant-locator.png"
+                    alt="restaurant locator"
+                  />
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2">
+                    Restaurant Locator
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <div class="card__description">
+                    <p class="paragraph u-center-text">
+                      An app that allows users to search for local restaurants
+                      and weather info in a city.
+                    </p>
+                  </div>
+                  <h3
+                    class="heading-tertiary u-center-text u-margin-bottom-small"
+                  >
+                    Technologies used:
+                  </h3>
+                  <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Bulma CSS framework</li>
+                    <li>Google Place APIs</li>
+                    <li>Open Weather APIs</li>
+                    <li>Zomato API (restaurant)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <a
+                    href="https://paul-kh.github.io/restaurant-locator/"
+                    class="btn btn--white u-margin-bottom-medium u-width-medium"
+                    target="_new"
+                  >
+                    Live Site
+                  </a>
+                  <a
+                    href="https://github.com/paul-kh/restaurant-locator"
+                    class="btn btn--white u-width-medium"
+                    target="_new"
+                  >
+                    Github Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">
+                  &nbsp;
+                  <img src="./assets/images/hangman.png" alt="hangman game" />
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3">
+                    Hangman Game
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <div class="card__description">
+                    <p class="paragraph u-center-text">
+                      A word-guess game that allows users to have 10 attempts of
+                      guessing a word.
+                    </p>
+                  </div>
+
+                  <h3
+                    class="heading-tertiary u-center-text u-margin-bottom-small"
+                  >
+                    Technologies used:
+                  </h3>
+                  <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <a
+                    href="https://paul-kh.github.io/word-guess-game/"
+                    class="btn btn--white u-margin-bottom-medium u-width-medium"
+                    target="_new"
+                  >
+                    Live Site
+                  </a>
+                  <a
+                    href="https://github.com/paul-kh/word-guess-game"
+                    class="btn btn--white u-width-medium"
+                    target="_new"
+                  >
+                    Github Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#contact" class="btn btn--green">Contact Me</a>
+        </div>
+      </section>
+
+      <section class="section-toolbox" id="toolbox">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="./assets/images/video.mp4" type="video/mp4" />
+            <source src="./assets/images/video.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">My Toolbox</h2>
+        </div>
+
+        <div class="row">
+          <div class="tool">
+            <div class="tool__detail" id="tool-detail">
+              <div class="tool__detail-box">
+                <div class="tool__logo-box">
+                  <img
+                    src="./assets/images/tool-logo-bg-white/nodejs.png"
+                    alt="Node JS"
+                    class="tool__logo"
+                    id="tool-logo"
+                  />
+                </div>
+                <div class="tool__detail-textbox">
+                  <h3 id="tool-name" class="heading-tertiary">Tool Name</h3>
+                  <p id="tool-desc">Tool Description</p>
+                  <h4>
+                    Skill Level:&nbsp; <span id="skill-level">&nbsp;</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="tool__box">
+              <div class="tool__wrapper">
+                <div class="tool__wrapper-row">
+                  <div class="tool-1" id="node">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/nodejs.png"
+                      alt="Node JS"
+                    />
+                  </div>
+                  <div class="tool-2" id="mongodb">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/mongodb.png"
+                      alt="Mongodb"
+                    />
+                  </div>
+                  <div class="tool-3" id="mysql">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/mysql.png"
+                      alt="MySQL"
+                    />
+                  </div>
+                </div>
+
+                <div class="tool__wrapper-row">
+                  <div class="tool-1" id="javascript">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/javascript.png"
+                      alt="Javascript"
+                    />
+                  </div>
+                  <div class="tool-2" id="react">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/react.png"
+                      alt="react"
+                    />
+                  </div>
+                  <div class="tool-3" id="bootstrap">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/bootstrap.png"
+                      alt="Bootstrap"
+                    />
+                  </div>
+                </div>
+
+                <div class="tool__wrapper-row">
+                  <div class="tool-1" id="css">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/css.png"
+                      alt="css?family"
+                    />
+                  </div>
+                  <div class="tool-2" id="sass">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/sass.png"
+                      alt="sass"
+                    />
+                  </div>
+                  <div class="tool-3" id="jquery">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/jquery.png"
+                      alt="jquery"
+                    />
+                  </div>
+                </div>
+
+                <div class="tool__wrapper-row">
+                  <div class="tool-1" id="git">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/git.png"
+                      alt="git"
+                    />
+                  </div>
+                  <div class="tool-2" id="jest">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/jest.png"
+                      alt="jest"
+                    />
+                  </div>
+                  <div class="tool-3" id="scrum">
+                    <img
+                      src="./assets/images/tool-logo-bg-white/scrum.png"
+                      alt="scrum"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#contact" class="btn-text">Contact me &rarr;</a>
+        </div>
+      </section>
+      <section class="section-book" id="contact">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form class="form" method="POST" id="contact-form">
+                <div class="u-margin-bottom-small">
+                  <h2 class="heading-secondary">Contact Me!</h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="name"
+                    placeholder="Your name"
+                    required
+                  />
+                  <label class="form__label" for="name">Your Name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    id="email"
+                    placeholder="Your email"
+                    required
+                  />
+                  <label class="form__label" for="email">Your Email</label>
+                </div>
+
+                <div class="form__group">
+                  <textarea
+                    name="message"
+                    class="form__input"
+                    id="message"
+                    placeholder="Your Message"
+                    cols="3"
+                    rows="10"
+                    required
+                  ></textarea>
+
+                  <label class="form__label" for="message">Your Message</label>
+                </div>
+
+                <div class="form__group">
+                  <button type="submit" class="btn btn--green" value="submit">
+                    Send &rarr;
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <div class="logo logo--green">
+          <i class="logo__icon--green icon-basic-world"></i>
+          <p class="logo__name">Paul Chheang</p>
+          <p class="logo__coding-symbol">&lt;/&gt;</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#about" class="footer__link">About Me</a>
+              </li>
+              <li class="footer__item">
+                <a href="#what-i-can-do" class="footer__link">What I Can Do</a>
+              </li>
+              <li class="footer__item">
+                <a href="#projects" class="footer__link">My Projects</a>
+              </li>
+              <li class="footer__item">
+                <a href="#toolbox" class="footer__link">My Toolbox</a>
+              </li>
+              <li class="footer__item">
+                <a href="#contact" class="footer__link">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-1-of-2">
+          <p class="footer__copyright u-center-text">
+            &copy; 2021
+            <a href="#about" class="footer__link">Paul Chheang </a> &nbsp;|
+            <a
+              href="https://github.com/paul-kh"
+              target="_new"
+              class="footer__link"
+              >Github
+            </a>
+            &nbsp;|
+            <a
+              href="https://www.linkedin.com/in/phalcheat-chheang-4152621a/"
+              class="footer__link"
+              target="_new"
+            >
+              LinkedIn</a
+            >
+            &nbsp;|
+            <span>phalcheat@gmail.com</span>
+          </p>
+        </div>
+      </div>
     </footer>
 
-    <!-- ***************Links for toggle button of Navbar to be functional **********************************-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-</body>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <div class="popup__img-box">
+            <img
+              src="./assets/images/nat-8.jpg"
+              alt="Tour photo"
+              class="popup__img"
+            />
+          </div>
+          <div class="popup__img-box">
+            <img
+              src="./assets/images/nat-9.jpg"
+              alt="Tour photo"
+              class="popup__img"
+            />
+          </div>
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start Booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Before I started my own adventure travel blog 10 years ago, I was
+            inspired to explore the world after reading other people’s travel
+            blogs online. Travel blogs are a wonderful source for cool ideas &
+            advice if you’re planning a trip! Below you’ll find some of my
+            favorite travel blogs, plus many more I’ve discovered over the
+            years. I hope you enjoy the variety of travel stories, photography,
+            and videos these travel bloggers publish from around the world!
+          </p>
+          <a href="" class="btn btn--green">Book Now</a>
+        </div>
+      </div>
+    </div>
 
+    <!--
+    <div class="grid-test">
+      <div class="row">
+        <div class="col-1-of-2">col 1 of 2</div>
+        <div class="col-1-of-2">col 1 of 2</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">col 1 of 3</div>
+        <div class="col-1-of-3">col 1 of 3</div>
+        <div class="col-1-of-3">col 1 of 3</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">col 1 of 3</div>
+        <div class="col-2-of-3">col 2 of 3</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">col 1 of 4</div>
+        <div class="col-1-of-4">col 1 of 4</div>
+        <div class="col-1-of-4">col 1 of 4</div>
+        <div class="col-1-of-4">col 1 of 4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">col 1 of 4</div>
+        <div class="col-1-of-4">col 1 of 4</div>
+        <div class="col-2-of-4">col 2 of 4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">col 1 of 4</div>
+        <div class="col-3-of-4">col 3 of 4</div>
+      </div>
+    </div> -->
+  </body>
+  <script src="./assets/scripts/main.js"></script>
+  <script src="./assets/scripts/toolbox.js"></script>
 </html>

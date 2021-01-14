@@ -1,0 +1,77 @@
+.logo {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 1.8;
+  box-shadow: 3px 3px 6px $color-primary-light,
+    3px -3px 6px $color-secondary-light, -3px -3px 6px $color-secondary-dark,
+    -3px 3px 6px $color-grey-dark;
+  @include centerElement;
+  perspective: 150rem;
+
+  @include respond(big-desktop) {
+    height: 13rem;
+    width: 13rem;
+  }
+
+  &--white {
+    color: $color-white;
+    border: 5px solid $color-white;
+  }
+
+  &--green {
+    color: $color-primary-light;
+    border: 5px solid $color-primary-dark;
+  }
+
+  &__icon--white {
+    font-size: 3rem;
+    display: inline-block;
+    color: $color-white;
+    margin-bottom: -1.5rem;
+    animation: rotate 3s linear infinite;
+
+    @include respond(big-desktop) {
+      font-size: 5rem;
+      margin-top: -1rem;
+      margin-bottom: -2rem;
+    }
+  }
+
+  &__icon--green {
+    font-size: 3rem;
+    display: inline-block;
+    color: $color-primary-light;
+    margin-bottom: -1.5rem;
+    animation: rotate 3s linear infinite;
+
+    @include respond(big-desktop) {
+      font-size: 5rem;
+      margin-top: -1rem;
+      margin-bottom: -2rem;
+    }
+  }
+
+  &__coding-symbol {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+
+    @include respond(big-desktop) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__name {
+    font-family: "Lobster", cursive;
+    font-size: 1.7rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: -0.5rem;
+
+    @include respond(big-desktop) {
+      font-size: 1.8rem;
+      margin-bottom: -1rem;
+    }
+  }
+}
