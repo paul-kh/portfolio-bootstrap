@@ -779,6 +779,43 @@ body {
         font-size: 1.8rem;
         margin-bottom: -1rem; } }
 
+.backdrop {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8));
+  position: relative;
+  transform: scaleY(160) scaleX(2);
+  z-index: 99998;
+  display: none; }
+  .backdrop--close {
+    display: none; }
+  .backdrop--open {
+    display: inline-block; }
+
+.messagebox {
+  display: none;
+  background-color: #fff;
+  z-index: 99999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .messagebox__message {
+    background-color: #f7f7f7;
+    padding: 4rem; }
+  .messagebox__close-button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer; }
+  .messagebox--close {
+    display: none; }
+  .messagebox--open {
+    display: inline-block; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.9), rgba(126, 213, 111, 0.9)), url("../images/hero-large.jpg");

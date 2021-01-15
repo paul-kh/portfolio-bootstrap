@@ -1,0 +1,29 @@
+.messagebox {
+  display: none;
+  background-color: #fff;
+  z-index: 99999;
+
+  @include centerElement;
+  &__message {
+    background-color: $color-grey-light-1;
+    padding: 4rem;
+  }
+
+  &__close-button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  &--close {
+    display: none;
+  }
+
+  &--open {
+    display: inline-block;
+  }
+}
