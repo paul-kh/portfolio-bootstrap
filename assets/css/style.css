@@ -574,7 +574,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: fit-content; }
+    width: max-content; }
     .tool__wrapper-row {
       transition: all 0.2s; }
       .tool__wrapper-row::after {
