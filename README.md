@@ -1,1 +1,1 @@
-Live site: https://paul-kh.github.io/portfolio/#projects
+Live site: https://paul-kh.github.io/portfolio/
